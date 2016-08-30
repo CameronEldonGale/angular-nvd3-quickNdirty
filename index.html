@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="myApp">
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="main.css" media="screen" title="no title" charset="utf-8">
     <title>D3NV</title>
   </head>
-  <body>
-    <div ng-app="myApp">
-      <div ng-controller="myCtrl">
+  <body ng-controller="myCtrl">
+
+
         <nvd3 options="options" data="data"></nvd3>
-      </div>
-    </div>
+
+
 
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js" charset="utf-8"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-nvd3/1.0.9/angular-nvd3.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+  <script src="https://rawgit.com/krispo/angular-nvd3/v1.0.5/dist/angular-nvd3.js"></script>
   <script src="app.js" charset="utf-8"></script>
 </html>
